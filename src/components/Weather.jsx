@@ -78,8 +78,7 @@ function Weather() {
               </div>
               <div className="wind">
                 <img src={wind} alt="" />
-                <p>{weatherData.wind.speed * 3.6} km/h</p>
-              </div>
+                <p>{Math.round(weatherData.wind.speed * 3.6)} km/h</p>           </div>
             </div>
             <div className="weather-icon">
               <img
